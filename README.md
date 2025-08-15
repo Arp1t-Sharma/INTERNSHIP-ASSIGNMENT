@@ -1,6 +1,4 @@
-# Persistent Chat – Figma-matched UI
-
-This build matches your Figma look (sky header with clouds, rounded chat, light-blue bubbles, footer with dropdowns/mic/send) and keeps the persistent chat animation requirements.
+# Chat UI - Frontend Assignment
 
 ## Run
 ```bash
