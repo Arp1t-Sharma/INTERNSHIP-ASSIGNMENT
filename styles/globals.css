@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --cloud: url('/clouds.svg'); }
+
+html, body, #__next { height: 100%; }
+
+body {
+  @apply bg-skybg;
+  background-image: linear-gradient(180deg, #F2FAFF 0%, #EAF5FF 35%, #EAF5FF 100%);
+}
+.header-clouds {
+  background-image: var(--cloud), var(--cloud);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 600px, 600px;
+  background-position: 10% 20%, 80% 5%;
+}
+
+.nav-link { @apply px-3 py-2 rounded-xl hover:bg-white transition; }
+.card { @apply bg-white rounded-xl3 shadow-card; }
+.chat-container { @apply bg-white rounded-xl2 shadow-soft; }
+.select {
+  @apply appearance-none border rounded-xl px-3 py-2 text-sm bg-white;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 20 20' fill='none'><path d='M5 7l5 6 5-6' stroke='%23667' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right .6rem center;
+  padding-right: 2rem;
+}
+.icon-btn { @apply rounded-xl p-2 bg-white border hover:bg-gray-50; }
+.send-btn { @apply rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700; }
